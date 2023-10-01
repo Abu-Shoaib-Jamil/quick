@@ -2,7 +2,7 @@ import React from 'react';
 import {
   SafeAreaView, StyleSheet,
 } from 'react-native';
-import HomeScreen from './views/homescreen/homescreen';
+import HomeScreen from './views/homescreen';
 
 function App(): JSX.Element {
   return (
