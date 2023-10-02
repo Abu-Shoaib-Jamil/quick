@@ -5,12 +5,7 @@ import styles from "../styles";
 import React from "react";
 import IconBuilder from "./icon";
 
-
-
-
 const BottomNavBar = createBottomTabNavigator();
-
-
 
 function BottomNavigationBar(){
     return(
