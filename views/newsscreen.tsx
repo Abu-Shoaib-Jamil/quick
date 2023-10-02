@@ -4,16 +4,16 @@ import Header from '../common/header';
 import NewsBuilder from '../common/newsbuilder';
 import styles from '../styles';
 import React from 'react';
-import BottomNavigationBar from "../common/bottomnavigationbar";
 
-function HomeScreen(){
+function NewsScreen(){
     return (
         <View style ={styles.homescreen}>
-            <Header title="QuickGist" />
+            {/* <Text>
+                News Screen
+            </Text> */}
             <NewsBuilder />
-            {/* <BottomNavigationBar/> */}
         </View>
     );
 }
 
-export default HomeScreen;
+export default NewsScreen;

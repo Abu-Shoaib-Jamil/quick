@@ -1,16 +1,35 @@
-import { View, Text } from 'react-native';
-import styles from '../styles';
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import NewsScreen from "../views/newsscreen";
+import BookmarkScreen from "../views/bookmarkscreen";
+import styles from "../styles";
+import React from "react";
+import IconBuilder from "./icon";
 
-function BottomNavigationBar() {
+
+
+
+const BottomNavBar = createBottomTabNavigator();
+
+
+
+function BottomNavigationBar(){
     return(
-        <View style={styles.bottomnavbar}>
-            <View style={styles.newssection}>
-                <Text>News</Text>
-            </View>
-            <View style={styles.bookmarksection}>
-                <Text>Bookmark</Text>
-            </View>
-        </View>
+        <BottomNavBar.Navigator 
+            initialRouteName="News" 
+            screenOptions={
+                {
+                    headerTitle : "QuickGist",
+                    headerTitleAlign : "center",
+                    headerStyle : styles.header,
+                    headerTintColor : "#FFFFFF",
+                    headerTitleStyle : {
+                        fontWeight : "bold",
+                    }
+                }}
+        >
+            <BottomNavBar.Screen name = "News" component={NewsScreen} options={{tabBarIcon:()=>IconBuilder({name : "news"})}}/>
+            <BottomNavBar.Screen name="Bookmarks" component={BookmarkScreen} options={{tabBarIcon:()=>IconBuilder({name : "bookmark"})}}/>
+        </BottomNavBar.Navigator>
     );
 }
 

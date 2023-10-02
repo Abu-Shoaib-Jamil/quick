@@ -18,18 +18,12 @@ const styles = StyleSheet.create({
         borderColor : "#696969",
     },
     header : {
-        padding : 20,
-        // marginBottom:10,
-        backgroundColor : '#FFFFFF',
-        display:"flex",
-        flexDirection: "row",
-        alignItems:"center",
-        justifyContent:"center",
+        // backgroundColor : '#FFFFFF',
         borderRadius : 10,
     },
-    androidShadow : {
-        elevation:10,
-    },
+    // androidShadow : {
+    //     elevation:10,
+    // },
     textStyle : {
         fontSize: 20,
         fontWeight : "bold",

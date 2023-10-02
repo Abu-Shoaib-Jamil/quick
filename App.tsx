@@ -2,13 +2,17 @@ import React from 'react';
 import {
   SafeAreaView, StyleSheet,
 } from 'react-native';
-import HomeScreen from './views/homescreen';
+import HomeScreen from './views/newsscreen';
+import { NavigationContainer } from '@react-navigation/native';
+import BottomNavigationBar from './common/bottomnavigationbar';
 
 function App(): JSX.Element {
   return (
-    <SafeAreaView style={styles.theme}>
-      <HomeScreen></HomeScreen>
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={styles.theme}>
+        <BottomNavigationBar/>
+      </SafeAreaView>
+    </NavigationContainer>
   );
 }
 
