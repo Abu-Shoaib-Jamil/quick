@@ -19,11 +19,10 @@ const styles = StyleSheet.create({
     },
     header : {
         // backgroundColor : '#FFFFFF',
-        borderRadius : 10,
+        // borderRadius : 10,
+        borderBottomLeftRadius : 10,
+        borderBottomRightRadius : 10,
     },
-    // androidShadow : {
-    //     elevation:10,
-    // },
     textStyle : {
         fontSize: 20,
         fontWeight : "bold",
@@ -35,15 +34,21 @@ const styles = StyleSheet.create({
     },
     newsitemwrapper :{
         display:"flex",
-        flexDirection:"column",
+        flexDirection:"row",
         alignItems:"center",
         justifyContent:"center",
-        marginVertical:10,
+        // marginVertical:10,
     },
     newsitem : {
-        width : windowWidth*0.975,
+        // width : windowWidth*0.9,
+        // borderWidth : 1,
+        // borderColor : "red",
+        // display:"flex",
+        // flexDirection:"column",
+        // alignItems:"center",
+        // justifyContent:"center",
         overflow : "hidden",
-        elevation : 5,
+        // elevation : 5,
         padding : 10,
         borderRadius : 5,
     },
@@ -58,8 +63,7 @@ const styles = StyleSheet.create({
     },
     image : {
         height : windowHeight*0.3,
-        width : windowWidth*0.9,
-        // backgroundColor: 
+        width : windowWidth*0.98,
         marginVertical:20,
     },
     homescreen : {
@@ -67,18 +71,35 @@ const styles = StyleSheet.create({
         flexDirection:"column",
         justifyContent:"flex-start",
     },
-    bottomnavbar : {
-        padding : 20,
-        backgroundColor : '#FFFFFF',
-        display:"flex",
-        flexDirection: "row",
+    actionbar : {
+        // borderWidth : 1,
+        // borderColor : "red",
+        display :"flex",
+        flexDirection : "row",
+        maxHeight : windowHeight*0.15,
+        justifyContent : "space-evenly",
+        paddingVertical : 20,
     },
-    newssection : {
-        flexGrow : 1,
+    // votesection : {
+    //     display : "flex",
+    //     flexDirection : "row",
+    //     // justifyContent : "flex-start",
+    //     // borderWidth : 1,
+    //     // borderColor : "green",
+        
+    // },
+    voteicon : {
+        display : "flex",
+        flexDirection : "row",
+        alignItems :"center",
+        justifyContent : "space-between",
+        // borderWidth : 1,
+        // borderColor : "red",
+        width : 100,
     },
-    bookmarksection : {
-        flexGrow : 1,
-    }
+    // votecount : {
+    //     marginHorizontal : 10,
+    // }
 });
 
 export default styles;

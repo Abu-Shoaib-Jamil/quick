@@ -1,5 +1,6 @@
 import { Text } from "react-native";
 
+
 function BookmarkScreen(){
     return(
         <Text>

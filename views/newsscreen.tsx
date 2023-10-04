@@ -8,9 +8,6 @@ import React from 'react';
 function NewsScreen(){
     return (
         <View style ={styles.homescreen}>
-            {/* <Text>
-                News Screen
-            </Text> */}
             <NewsBuilder />
         </View>
     );
