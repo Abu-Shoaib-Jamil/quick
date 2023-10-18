@@ -26,7 +26,7 @@ function BottomNavigationBar(){
                 }}
         >
             <BottomNavBar.Screen name = "News" component={NewsScreen} options={{tabBarIcon:()=><NewsIcon iconsize={iconsize} iconcolor={iconcolor} />}}/>
-            <BottomNavBar.Screen name="Bookmarks" component={BookmarkScreen} options={{tabBarIcon:()=><BookmarkIcon isBookmarked={true} iconsize={iconsize} iconcolor={iconcolor}/>}}/>
+            <BottomNavBar.Screen name="Bookmarks" component={BookmarkScreen} options={{tabBarIcon:()=><BookmarkIcon isBookmarked={true} iconsize={iconsize} iconcolor={iconcolor} handleBookmark={()=>{}}/>}}/>
         </BottomNavBar.Navigator>
     );
 }
